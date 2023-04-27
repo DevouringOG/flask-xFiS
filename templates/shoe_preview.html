@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <img class="preview-image" src='{{ url_for("static", filename="img/" + shoe["name"] + "/top.jpg") }}'>
+    </div>
+    <div class="col">
+      <h1>{{ shoe["name"] }}</h1>
+      <p>{{ shoe["category"] }}</p>
+      <p>{{ shoe["price"] }}</p>
+      <p>The {{ shoe["name"] }} lets a new wave of<br>
+      comfort and style take hold with a design that<br>
+      celebrates the rebellious underground rave scene.<br>
+      This iteration takes that inspiration even further with<br>
+      reflective details designed to work with the strobe<br>
+      lighting often found on a dance floor to make you<br>
+      and your moves shine. Slip them on and let the<br>
+      dance party begin.</p>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

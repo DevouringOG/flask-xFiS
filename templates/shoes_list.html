@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container overflow-hidden">
+  <div class="row gx-5">
+    {% for shoe in shoes_data %}
+    <div class="col">
+      <a href="/show_shoe/{{ shoe['id'] }}"><img class="title-image" src='{{ url_for("static", filename="img/" + shoe["name"] + "/title.jpg") }}'></a>
+      <p class="title-text">{{ shoe["name"] }}</p>
+      <p class="category-text">{{ shoe["category"] }}</p>
+      <p class="price-text">${{ shoe["price"] }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

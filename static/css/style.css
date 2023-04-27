@@ -1,0 +1,44 @@
+.flex-fill {
+    flex:1
+ }
+
+.title-image {
+    width: 350px;
+}
+
+main {
+    padding-top: 3%;
+}
+
+.title-text {
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.preview-image {
+    width: 100%;
+}
+
+.col {
+    text-align: left;
+}
+
+.add-shoe-form {
+    padding-inline: 32%;
+}
+
+.login-form {
+    padding-inline: 32%;
+    padding-bottom: 8%;
+}
+
+.register-form {
+    padding-inline: 32%;
+    padding-bottom: 8%;
+}
